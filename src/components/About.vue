@@ -9,9 +9,9 @@
                    ready awareness and grit. Have a good team
                    spirit, deadline oriented and having the ability to organize, present complex solutions clearly and
                    accurately.
-                   Looking for a suitable position where I can become a better developer with an exciting and
+                   <!-- Looking for a suitable position where I can become a better developer with an exciting and
                    innovative company that offers room for progression and building of maintainable products with collaborative
-                   efforts.
+                   efforts. -->
                    I have been involved with building a tech community here in Ibadan.
                 </p>
                 <p>Born & Raised in Ibadan, Oyo State also an indigene of Abeokuta-North, Ogun State.
