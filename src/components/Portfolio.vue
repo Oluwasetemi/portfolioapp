@@ -27,8 +27,8 @@ export default {
 <style scoped>
 .img {
   margin-top: 70px;
-  height: 250px;
-  width: 250px;
+  height: 240px;
+  width: 240px;
   border-radius: 50%;
 }
 main {
