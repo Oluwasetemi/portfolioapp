@@ -2,17 +2,17 @@
     <div class="contact main">
                 <div class="box">
         <h2>GET IN TOUCH</h2>
-        <form name="contact" method="POST" netlify>
+        <form name="contact" data-netlify="true">
             <div class="inputBox">
-                <input type="text" name="name" required="">
+                <input type="text" name="name" required value="">
                 <label for="">Name</label>
             </div>
             <div class="inputBox">
-                    <input type="email" name="email" required="">
+                    <input type="email" name="email" required value="">
                     <label for="">Email</label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="message" required="">
+                    <input type="text" name="message" required value="">
                     <label for="">Message</label>
                     </div>
                 <button type="submit">SEND</button>
