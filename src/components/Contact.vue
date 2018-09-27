@@ -4,15 +4,15 @@
         <h2>GET IN TOUCH</h2>
         <form name="contact" netlify>
             <div class="inputBox">
-                <input type="text" name="contact" required="">
+                <input type="text" name="name" required="">
                 <label for="">Name</label>
             </div>
             <div class="inputBox">
-                    <input type="email" name="contact" required="">
+                    <input type="email" name="email" required="">
                     <label for="">Email</label>
                 </div>
                 <div class="inputBox">
-                    <input type="text" name="contact" required="">
+                    <input type="text" name="message" required="">
                     <label for="">Message</label>
                     </div>
                 <button type="submit">SEND</button>
