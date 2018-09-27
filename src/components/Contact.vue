@@ -1,27 +1,24 @@
 <template>
     <div class="contact main">
-                    <h1 class="form-span">Get In Touch</h1>
-                <form class="contact-form">
-                    <div class="label">
-                        <label for="">Name</label>
+                <div class="box">
+        <h2>GET IN TOUCH</h2>
+        <form>
+            <div class="inputBox">
+                <input type="text" name="" required="">
+                <label for="">Name</label>
+            </div>
+            <div class="inputBox">
+                    <input type="email" name="" required="">
+                    <label for="">Email</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="">
+                    <label for="">Message</label>
                     </div>
-                    <input type="text" placeholder="Full Name">
-                    <div class="label">
-                        <label for="">Phone</label>
-                    </div>
-                    <input type="tel" pattern="[0-9]{10}" placeholder="Phone No.">
-                    <div class="label">
-                        <label for="">Email Address</label>
-                        </div>
-                        <input type="email" placeholder="Enter Your Email">
-                    
-                    <div class="label">		          
-		        
-		      	<textarea cols="46" rows="5" placeholder="Message"  required></textarea> 
-			</div>
-                    <button type="submit">SEND</button>
-                </form>  
-                <div class="foot">Copyright &copy; Abidemi 2018</div> 
+                <input type="submit" value="SEND">
+        </form>
+    </div>  
+                
             </div>
 </template>
 
@@ -33,47 +30,92 @@ button {
   box-shadow: 0 0 40px -10px #000;
   cursor: pointer;
 }
-h3{
+
+.box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
     text-align: center;
 }
-.foot{
-    margin-top: 60px;
-    text-align: center;
+
+.box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35vw;
+    padding: 20px;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
 }
-input,
-button,
+
+.box .inputBox{
+    position: relative;
+}
+
+.box .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    background: transparent;
+}
+
+.box .inputBox label{
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 10px 0;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label
+ {
+    top: -18px;
+    left: 0;
+    color: #38ce59;
+    font-size: 12px;
+}
+
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #38ce59;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 textarea {
   outline: none;
   border-radius: 5px;
 }
-.contact-form {
-  margin: 0 auto;
-  margin-top: 10px;
-  width: 35vw;
-  display: grid;
-  justify-content: center;
-  color: black;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 40px -10px #000;
-  padding: 20px;
-}
-.label {
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
+
+
 @media (max-width: 500px) {
-    .contact-form {
+    .box {
+   position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 60vw;
-    margin: 0 auto;
-    margin-top: 5px;
-    display: grid;
-    justify-content: center;
-    color: black;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 40px -10px #000;
     padding: 20px;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
   }
   input,
   button,
@@ -87,17 +129,17 @@ textarea {
 }
 
 @media (min-width: 500px) and (max-width: 1020px) {
-  .contact-form {
+   .box {
+   position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 60vw;
-    margin: 0 auto;
-    margin-top: 5px;
-    display: grid;
-    justify-content: center;
-    color: black;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 40px -10px #000;
     padding: 20px;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
   }
   input,
   button,
@@ -109,7 +151,7 @@ textarea {
     text-align: center;
 }
 .main{
-    height: 170vh;
+    height: 86.6vh;
     background-color: #38ce59;
 }
 }
