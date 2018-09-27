@@ -2,7 +2,7 @@
     <div class="contact main">
                 <div class="box">
         <h2>GET IN TOUCH</h2>
-        <form name="contact" netlify>
+        <form name="contact" method="POST" netlify>
             <div class="inputBox">
                 <input type="text" name="name" required="">
                 <label for="">Name</label>
