@@ -31,21 +31,23 @@ export default {
   name: "app",
   components: {
     Portfolio
-  },
-  } ;
+  }
+};
 </script>
 
 <style>
 @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
-@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Orbitron|Ubuntu');
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Orbitron|Ubuntu");
 
-*{
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    font-family: 'Ubuntu', sans-serif;
+body {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #38ce59;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
 }
 .nav-btn {
   display: none;
@@ -53,26 +55,28 @@ export default {
 #nav-check {
   display: none;
 }
-#header{
-    padding: 30px;
-    background-color: #2c3e50; 
-    display: grid;
-    color: aliceblue;
-    grid-template-columns: 150px 1fr 280px; 
+#header {
+  padding: 30px;
+  background-color: #2c3e50;
+  display: grid;
+  color: aliceblue;
+  grid-template-columns: 150px 1fr 280px;
 }
-#app{
+#app {
   position: relative;
 }
-nav{
+nav {
   grid-column: 3 / -1;
 }
-a{
-    padding-left: 15px;
-    color: aliceblue;
+a {
+  padding-left: 15px;
+  background-color: transparent;
+  text-decoration: none;
+  color: aliceblue;
 }
-.heading{
-    font-size: 2.5rem;
-    font-weight: bold;
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 .form-span {
   font-size: 40px;
@@ -81,29 +85,28 @@ a{
   padding-top: 35px;
   margin-bottom: 30px;
 }
-.main{
+
+/* .main {
   background-color: #38ce59;
-  height:88.4vh;
+} */
+.logo {
+  font-family: "Bowlby One SC", cursive;
 }
-.logo{
-  font-family: 'Bowlby One SC', cursive;
-  /* font-size: 20px; */
-}
-.pspan{
-  font-family: 'Orbitron', sans-serif;
+.pspan {
+  font-family: "Orbitron", sans-serif;
   font-weight: bold;
 }
-p{
+p {
   font-size: 1.2rem;
 }
-@media (max-width:500px) {
-  #header{
+@media (max-width: 500px) {
+  #header {
     padding: 30px;
-    background-color: #2c3e50; 
+    background-color: #2c3e50;
     display: grid;
     color: aliceblue;
-    grid-template-columns: 100px 1fr 200px; 
-}
+    grid-template-columns: 100px 1fr 200px;
+  }
   .nav-btn {
     display: inline-block;
     position: absolute;
@@ -116,10 +119,10 @@ p{
     height: 50px;
     padding-top: 30px;
   }
- .nav-btn > label:hover {
+  .nav-btn > label:hover {
     cursor: pointer;
   }
-.nav-links {
+  .nav-links {
     position: absolute;
     display: block;
     width: 100%;
@@ -148,19 +151,8 @@ p{
     height: calc(18vh - 91px);
     overflow-y: hidden;
   }
-  .port{
-  background-color: #38ce59;
-  height:115vh;
-}
-/* .skills,
-.contact,
-.about{
-  background-color: #38ce59;
-  height: 125%;
-} */
-p{
-  font-size: 1.15rem;
-}
-
+  p {
+    font-size: 1.15rem;
+  }
 }
 </style>

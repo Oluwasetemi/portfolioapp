@@ -42,8 +42,8 @@ button {
 
 .box {
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 30vw;
+    left: 50vw;
     transform: translate(-50%, -50%);
     width: 35vw;
     padding: 20px;
@@ -114,9 +114,9 @@ textarea {
     transform: translate(-50%, -50%);
     width: 60vw;
     padding: 20px;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, 0.8);
     box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
   }
   input,
@@ -133,8 +133,8 @@ textarea {
 @media (min-width: 500px) and (max-width: 1020px) {
    .box {
    position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 50vw;
+    left: 50vw;
     transform: translate(-50%, -50%);
     width: 60vw;
     padding: 20px;
@@ -151,10 +151,6 @@ textarea {
 .foot{
     margin-top: 35px;
     text-align: center;
-}
-.main{
-    height: 86.6vh;
-    background-color: #38ce59;
 }
 }
 </style>

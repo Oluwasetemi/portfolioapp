@@ -13,44 +13,43 @@
 </template>
 
 <style scoped>
-
-iframe{
-    border-radius: 5px;
-    width: 100%;
-    margin-bottom: 10px;
+iframe {
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
 }
-main{
-    margin: 0 auto;
-    width: 80%;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr
+main {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media only screen and (max-width: 500px){
-    main {
+@media only screen and (max-width: 500px) {
+  main {
     margin: 0 auto;
     display: grid;
     grid-row-gap: 5px;
     grid-template-columns: 1fr;
-}
-.port{
+  }
+  .port {
     height: 130vh;
     background-color: #38ce59;
+  }
 }
-}
-@media  (max-width: 800px) and (min-width: 500px){
-    main {
-        width: 50vw;
+@media (max-width: 800px) and (min-width: 500px) {
+  main {
+    width: 50vw;
     margin: 0 auto;
     display: grid;
     grid-row-gap: 5px;
     grid-template-columns: 1fr;
-}
-.port{
+  }
+  .port {
     height: 120vh;
     background-color: #38ce59;
-}
+  }
 }
 </style>
 

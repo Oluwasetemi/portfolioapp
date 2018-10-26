@@ -46,47 +46,43 @@
 </template>
 
 <style scoped>
-    progress[value]{
-        padding: 20px;
-        width: 200px;
-    }
-    
-    .tech{
-        /* width: 80%; */
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-        padding: 20px;
-        justify-items: center;
-    }
-    .head{
-        text-align: center;
-    }
-    label{
-        display: block;
-    }
+progress[value] {
+  padding: 20px;
+  width: 200px;
+}
 
-    @media only screen and (max-width: 500px ) {
-       .tech{
-        /* width: 80%; */
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-        padding: 10px;
-    } 
-    progress[value]{
-        padding: 10px;
-        width: 150px;
-    }
-    }
-    @media (min-width: 500px) and (max-width: 800px) {
-        progress[value]{
-        padding: 20px;
-        width: 150px;
-    }
-    main{
-        height: 70vh;
-        background-color: #38ce59;
-    }
-    }
+.tech {
+  /* width: 80%; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+.head {
+  text-align: center;
+}
+label {
+  display: block;
+}
+
+@media only screen and (max-width: 500px) {
+  .tech {
+    /* width: 80%; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  progress[value] {
+    padding: 10px;
+    width: 150px;
+  }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  progress[value] {
+    padding: 20px;
+    width: 150px;
+  }
+}
 </style>

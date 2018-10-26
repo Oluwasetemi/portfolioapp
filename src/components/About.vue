@@ -46,10 +46,10 @@
     grid-row-gap: 10px;
     grid-template-columns: 1fr ;
 }
-main{
+/* main{
         height: 100vh;
         background-color: #38ce59;
-    }
+    } */
 
 }
 @media only screen and (max-width: 800px) {
@@ -61,10 +61,10 @@ main{
         padding: 5px;
         text-align: justify;
 }
-main{
+/* main{
         height: 150vh;
         background-color: #38ce59;
-    }
+    } */
 }
 </style>
 
